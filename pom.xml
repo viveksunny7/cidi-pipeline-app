@@ -33,6 +33,37 @@
 				<configuration>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<configuration>
+				<cloudHubDeployment>
+				<muleVersion>${app.runtime}	</muleVersion>
+				<username>viveksunny987</username>
+				<password>September$7</password>
+				<environment>Sandbox</environment>
+				<workerType>Micro</workerType>
+				<workers>1</workers>
+				<uri>https://anypoint.mulesoft.com</uri>;
+				<applicationName>cicd-pipeline-app</applicationName>
+				</cloudHubDeployment>
+				</configuration>
+				<executions>
+				<execution>
+				<id>deploy</id>
+				<phase>deploy</phase>
+				<goals>
+				<goal>
+				deploy
+				</goal>
+				</goals>
+				</execution>
+				</executions>
+				
+			
+			
+			</plugin>
 		</plugins>
 	</build>
 
