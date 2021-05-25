@@ -21,5 +21,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	region : attributes.uriParams.region
 }]]]></http:uri-params>
 		</http:request>
+		<logger level="INFO" doc:name="Logger" doc:id="bd97bd5b-219e-4078-b671-6cc6f564a32a" message="Response payload #[payload]"/>
 	</flow>
 </mule>
